@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
  <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     text-align:center;
     }
     *{
-    color:hsla(0, 100%, 50%, 0.8);
+    color:hsla(0, 100%, 50%, 1);
     background-color:hsl(248, 53%, 45%);
     background-size:contain;
     background-attachment: scroll;
@@ -16,6 +17,8 @@
     width:100%;
     }
   </style>
+
+
   <title>This is a test web page!</title>
 </head>
 
@@ -32,13 +35,61 @@
 <i>蓮華花火 - Piano & Vocal Version - -instrumental-<br/></i>
     <audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop">
         <source src="audio.mp3" type="audio/mp3"/>
-        您的浏览器不支持该音频格式！ Your browser does not support this audio format.
+        Your browser does not support this audio format.
     </audio>
 </tr></td>
+  </table>
+  <li><h3>This can be expressed in the form of y=ax^2+bx+c in‍‍ y=a(x+h)^2+k:</h3></li>
+  <table border="1">
+
+<tr><td>
+<i>a:</i>
+  <input type="text" id="A"  />
+<br/>
+<i>b:</i>
+  <input type="text" id="B"  />
+<br/>
+<i>c:</i>
+  <input type="text" id="C"  />
+</tr></td>
+<tr><td>
+<button type="button" onclick="main()">Answer</button><i id="ans"></i>
+</tr></td>
+
   </table>
 
   </lu>
   <br/><br/><br/>
   <img src="img.jpeg">
+
+
+
+/* ============================ */
+	<script>
+	function qwq(h, i) 
+	{
+    	while (i != 0) 
+		{
+        let g = h % i;
+        h = i;
+        i = g;
+    	}
+    return h;
+	}
+
+	function main() 
+	{
+	var A = document.getElementById("A").value;
+	var B = document.getElementById("B").value;
+	var C = document.getElementById("C").value;
+	var D = 2 * A;
+	var E = 4 * A * C - B * B;
+	var F = 4 * A;
+	var G = "y="+A+"(x+("+B/qwq(D,B)+"/"+D/qwq(D,B)+"))^2+("+E/qwq(E,F)+"/"+F/qwq(E,F)+")";
+	document.getElementById("ans").innerHTML = G;
+	alert("Answer:"+G);
+	}
+	</script>
+/* ========================== */
 </body>
 </html>
