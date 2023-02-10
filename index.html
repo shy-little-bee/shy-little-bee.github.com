@@ -16,6 +16,20 @@
     heigh:auto;
     width:100%;
     }
+	.video{
+	heigh:240px;
+	width:100%;
+	scrolling="true";
+	}
+	input{
+	background-color: rgb(255, 255, 255);
+	}
+	table{
+	width:100%;
+	}
+	.td_1{
+	height:200px;
+	}
   </style>
 
 
@@ -28,38 +42,59 @@
   <h1>This is a test web page!</h2>
   <hr/>
   <ul>
-  <li><h3>This is one of my favourite music:</h3></li>
+  <br/>
+  <li><h3>Here are some of my favourite music:</h3></li>
 
   <table border="1">
-<tr><td>
-<i>蓮華花火 - Piano & Vocal Version - -instrumental-<br/></i>
+<tr>
+<td>
+<i>蓮華花火 - Piano & Vocal Version - -instrumental-<br/>(Liz Triangle)<br/></i>
     <audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop">
         <source src="audio.mp3" type="audio/mp3"/>
         Your browser does not support this audio format.
     </audio>
-</tr></td>
+</td>
+<td>
+<i>愿い星、帰り道<br/>(KRASTER様)<br/></i>
+    <audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop">
+        <source src="audio_0.mp3" type="audio/mp3"/>
+        Your browser does not support this audio format.
+    </audio>
+</td>
+</tr>
+<tr>
+	<td class="td_1">
+	<iframe class="video" src="//player.bilibili.com/player.html?aid=7165930&cid=11732142&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+	</td>
+	<td class="td_1">
+	<iframe class="video" src="//player.bilibili.com/player.html?aid=246077895&cid=276800390&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+	</td>
+</tr>
+
   </table>
+  <br/>
   <li><h3>Conver "y=ax^2+bx+c" to "y=a(x+h)^2+k":</h3></li>
   <table border="1">
 
 <tr><td>
 <i>a:</i>
-  <input type="text" id="A"  />
+  <input type="text" id="A" size="30"  placeholder="A_int(请输入整数值)"/>
 <br/>
 <i>b:</i>
-  <input type="text" id="B"  />
+  <input type="text" id="B" size="30"  placeholder="B_int(请输入整数值)"/>
 <br/>
 <i>c:</i>
-  <input type="text" id="C"  />
-</tr></td>
-<tr><td>
+  <input type="text" id="C" size="30"  placeholder="C_int(请输入整数值)"/>
+</td>
+<td>
 <button type="button" onclick="main()">Answer</button><i id="ans"></i>
 </tr></td>
 
   </table>
 
   </lu>
-  <br/><br/><br/>
+  <br/>
+  <li><h3>This is the picture I took before:</h3></li>
   <img src="img.jpeg">
 
 
